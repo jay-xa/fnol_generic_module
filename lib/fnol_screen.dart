@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class FNOLScreen extends StatefulWidget {
   const FNOLScreen({Key? key}) : super(key: key);
@@ -10,6 +10,8 @@ class FNOLScreen extends StatefulWidget {
 class _FNOLScreenState extends State<FNOLScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Text('FNOL Screen');
+    return Scaffold(
+        appBar: AppBar(title: const Text('FNOL Flow')),
+        body: const Center(child: Text('FNOL Screen')));
   }
 }
